@@ -65,9 +65,19 @@
   display: inline;
 }
 
+.navbar-items a {
+  text-decoration: none;
+}
+
 .item {
   float: right;
   padding: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    padding: 2% 2% 3% 1.5%;
+  }
 }
 
 .fab, .fas {
@@ -97,7 +107,8 @@ button {
   font-size: 5vh;
 }
 
-.fa-rocket {
+.fa-github {
+  color: rgba(0, 0, 0, 0.74);
   font-size: 5vh;
 }
 
@@ -125,6 +136,14 @@ body {
           align-items: center;
   width: 100vw;
   color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 20vh;
+    left: 30vh;
+    overflow: hidden;
+  }
 }
 
 .heading h1 {
@@ -155,6 +174,14 @@ body {
   width: 60vh;
 }
 
+@media screen and (max-width: 600px) {
+  .images img {
+    height: 20vh;
+    width: 30vh;
+    left: 40%;
+  }
+}
+
 .images .image1 {
   z-index: 2;
 }
@@ -180,6 +207,14 @@ body {
   z-index: 1;
 }
 
+@media screen and (max-width: 600px) {
+  .content .bar {
+    top: 50%;
+    height: 5vw;
+    width: 50%;
+  }
+}
+
 .content .text {
   font-family: lato,sans-serif;
   padding-left: 2vw;
@@ -192,17 +227,41 @@ body {
   margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .content .text {
+    top: 20%;
+  }
+}
+
 .content .text h1 {
   padding-bottom: 1%;
   font-size: 120px;
+}
+
+@media screen and (max-width: 600px) {
+  .content .text h1 {
+    font-size: 55px;
+  }
 }
 
 .content .text h3 {
   padding-top: 1.5%;
 }
 
+@media screen and (max-width: 600px) {
+  .content .text h3 {
+    padding-top: 25%;
+  }
+}
+
 .content .text p {
   font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .content .text p {
+    font-size: 18px;
+  }
 }
 
 .content .logos {
@@ -221,6 +280,30 @@ body {
 .content .logos img {
   height: 48px;
   width: 48px;
+}
+
+@media screen and (max-width: 600px) {
+  .content .logos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 60%;
+  }
+  .content .logos .one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* flex-direction: column;
+                position: absolute; */
+  }
+  .content .logos .two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* flex-direction: column;
+                position: absolute; */
+  }
 }
 
 .buttons {

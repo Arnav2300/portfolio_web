@@ -243,12 +243,20 @@ body{
     //display: flex;
     //float:right;
     display:inline;
+    a{
+        text-decoration: none;
+    }
+    
 }
 .item{
     float: right;
     padding: 1%;
     //font-size: 5vh;
     //display:inline-block;
+    @media screen and (max-width: 600px) {
+        padding: 2% 3% 3% 1.5%;
+        
+    }
 }
 
 .fab, .fas{
@@ -277,7 +285,8 @@ button{
     color: #E1306C;
     font-size: 5vh;
 }
-.fa-rocket{
+.fa-github{
+    color: rgba(245, 245, 245, 0.76);
     font-size: 5vh;
 }
 //navbar ends

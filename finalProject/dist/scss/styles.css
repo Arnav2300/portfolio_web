@@ -260,9 +260,19 @@ body .container section h1 .terminal, body .container section h1 .cursor {
   display: inline;
 }
 
+.navbar-items a {
+  text-decoration: none;
+}
+
 .item {
   float: right;
   padding: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    padding: 2% 3% 3% 1.5%;
+  }
 }
 
 .fab, .fas {
@@ -292,7 +302,8 @@ button {
   font-size: 5vh;
 }
 
-.fa-rocket {
+.fa-github {
+  color: rgba(245, 245, 245, 0.76);
   font-size: 5vh;
 }
 /*# sourceMappingURL=styles.css.map */

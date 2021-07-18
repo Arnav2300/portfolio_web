@@ -55,12 +55,19 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
-  display: inline;
+  /* @media screen and (max-width: 600px) {
+        display:flex;
+        flex-direction: column;
+    } */
+}
+
+.navbar-items a {
+  text-decoration: none;
 }
 
 .item {
   float: right;
-  padding: 1%;
+  padding: 1% 0.8% 1% 0.3%;
 }
 
 .fab, .fas {
@@ -90,7 +97,8 @@ button {
   font-size: 5vh;
 }
 
-.fa-rocket {
+.fa-github {
+  color: rgba(0, 0, 0, 0.74);
   font-size: 5vh;
 }
 
@@ -284,6 +292,7 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
   background-clip: text;
   border-color: white;
 }

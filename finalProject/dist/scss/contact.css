@@ -58,9 +58,20 @@
   display: inline;
 }
 
+.navbar-items a {
+  text-decoration: none;
+}
+
 .item {
   float: right;
   padding: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    padding: 2% 3% 3% 1.5%;
+    overflow: hidden;
+  }
 }
 
 .fab, .fas {
@@ -90,7 +101,8 @@ button {
   font-size: 5vh;
 }
 
-.fa-rocket {
+.fa-github {
+  color: rgba(0, 0, 0, 0.74);
   font-size: 5vh;
 }
 
@@ -113,6 +125,14 @@ button {
           align-items: center;
   width: 100vw;
   color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 20vh;
+    left: 50vh;
+    overflow: hidden;
+  }
 }
 
 .heading h1 {
@@ -189,6 +209,12 @@ button {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 50%;
+  }
 }
 
 .wrapper .title h1 {
