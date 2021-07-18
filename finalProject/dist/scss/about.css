@@ -288,7 +288,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 60%;
+    top: 65%;
   }
   .content .logos .one {
     display: -webkit-box;
