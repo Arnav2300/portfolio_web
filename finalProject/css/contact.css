@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?&family=Zen+Tokyo+Zoo&family=Sawarabi+Mincho&family=Lato&family=Source+Code+Pro&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?&family=Roboto&family=Zen+Tokyo+Zoo&family=Sawarabi+Mincho&family=Lato&family=Source+Code+Pro&family=VT323&display=swap");
 @font-face {
   font-family: Dirga;
   src: url(../fonts/Dirga.ttf);
@@ -175,62 +175,108 @@ button {
   padding: 0;
 }
 
-.form_container {
+.wrapper {
   font-family: lato,sans-serif;
+  position: absolute;
   top: 50%;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 8;
-  color: black;
-  font-size: 1.2rem;
-}
-
-.form {
-  position: relative;
-  width: 20rem;
-  top: 50vh;
-}
-
-.form .form_input {
-  position: absolute;
-  top: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
-  height: 100%;
-  border: 4px solid gray;
-  border-radius: 0.5rem;
-  font-family: inherit;
-  font-size: inherit;
-  outline: none;
-  padding: 1.25rem;
-  background: none;
+  max-width: 550px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.form .form_input:hover {
-  border-color: #E1306C;
+.wrapper .title h1 {
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-.form .form_input:focus {
-  border-color: #fc354c;
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.form .form_label {
-  position: absolute;
-  left: 1rem;
-  top: 0.8rem;
-  padding: 0 0.5rem;
-  cursor: text;
-  -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-  background-color: #c9c9c9;
+.input-fields {
+  margin-right: 4%;
 }
 
-.form_input:focus ~ .form_label, .form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form_label {
-  top: -0.5rem;
-  font-size: 0.8rem;
-  left: 0.8rem;
+.input-fields,
+.msg {
+  width: 100%;
+}
+
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid aliceblue;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 50px;
+  resize: none;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: aliceblue;
+  font-family: MK3ul,sans-serif;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: aliceblue;
+  font-family: MK3ul,sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: aliceblue;
+  font-family: MK3ul,sans-serif;
+}
+
+.btn {
+  float: right;
+  background: #fc354c;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .msg textarea {
+    height: 40px;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
