@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?&family=Zen+Tokyo+Zoo&family=Sawarabi+Mincho&family=Lato&family=Source+Code+Pro&family=VT323&display=swap');
+@font-face {
+    font-family: Dirga;
+    src: url(../fonts/Dirga.ttf);
+}
+@font-face {
+    font-family: MK3ul;
+    src: url(../fonts/Apex-Mk3-ExtraLight.otf);
+}
+@font-face {
+    font-family: MK3m;
+    src: url(../fonts/Apex-Mk3-Medium.otf);
+}
+@font-face {
+    font-family: Beon;
+    src: url(../fonts/Beon.otf);
+}
+@font-face {
+    font-family: Marquee-moon;
+    src: url(../fonts/marquee-moon.ttf);
+}
+@font-face {
+    font-family: NeonTubes2;
+    src: url(../fonts/NeonTubes2.otf);
+}
+@font-face {
+    font-family: Night70sb;
+    src: url(../fonts/Night-Club-70s-Bold.ttf);
+}
+@font-face {
+    font-family: Night70sr;
+    src: url(../fonts/Night-Club-70s-Regular.ttf);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    color: aliceblue;
+
+    .container{
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        
+        
+        section{
+            //flex:none;
+            display:flex;
+            //justify-content: center;
+            align-items: center;
+            width:100%;
+            height:100%;
+            scroll-snap-align: start;
+
+            &:nth-of-type(1){
+                background-color: black;
+                
+            }
+            &:nth-of-type(2){
+                flex: none;
+                position:relative;
+                background-color: black;
+                color: blue;
+                
+                overflow:hidden;
+                .jap{
+                    position: absolute;
+                    font-family: Sawarabi Mincho;
+                    font-size: 4vh;
+                    //margin-left: 0px;
+                    top: 24vh;
+                    color:aliceblue;
+                    padding-left:15vw;
+                }
+                /* .eng{
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 3vh;
+                    position: absolute;
+                    top:20vh;
+                    right: 0vh;
+                    color:aliceblue;
+                    padding-right:15vw;
+                } */
+                svg{
+                    position: absolute;
+                    opacity: 1;
+                }
+            }
+            &:nth-of-type(3){
+                //background-image: url('../images/me.png');
+                background-color: black;
+                overflow:hidden;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                p{
+                    flex:none;
+                    color: aliceblue;
+                    font-family: lato,sans-serif;
+                    
+                }
+                .greeting{
+                    padding: 0;
+                    margin:0;
+                    position: absolute;
+                    //top: -1vh;
+                    font-family: Marquee-moon,MK3m,lato,sans-serif;
+                                      
+                    font-size: 28vw;
+                    //font-weight: 600;
+                    //-webkit-text-stroke: 2px solid linear-gradient(90deg, transparent,#fc354c) #fc354c;
+                    
+                    color: #fff;
+                    opacity: 0;
+                    text-shadow:
+                        0 0 7px #fff,
+                        0 0 10px #fff,
+                        0 0 21px #fff,
+                        0 0 42px #fc354c,
+                        0 0 82px #fc354c,
+                        0 0 92px #fc354c,
+                        0 0 102px #fc354c,
+                        0 0 151px #fc354c;
+                    
+                }
+                .intro{
+                    font-size: 10vw;
+                    position: absolute;
+                }
+                .proff{
+                    position: absolute;
+                    font-size: 4vw;
+                    top: 60vh;
+                    color: rgba(240, 248, 255, 0.596);
+                }
+                .buttons{
+                    position: absolute;
+                    display: flex;
+                    width:100%;
+                    top: 85vh;
+                    
+                    button{
+                        font-family: MK3ul;
+                        font-size: 25px;
+                        margin: 0 auto 0 auto;
+                        text-align: center;
+                        //border: 1px solid green;
+                        padding: 1% 2% 1% 2%;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        letter-spacing: 1px;
+                        transition: 0.2s;
+                        //box-shadow: 0px 15px 35px rgba(184, 21, 21, 0.2);
+                        a{
+                            text-decoration: none;
+                            color: aliceblue;
+                        }
+                        
+                    }
+                    button:hover{
+                        background:#fc354c;
+                        box-shadow: 0 0 5px #fc354c, 0 0 20px #fc354c, 0 0 40px #fc354c;
+                        transition-delay: 0.2s;
+
+                    }
+                    /* button{
+                        border-top: 2px solid linear-gradient(90deg, transparent,#fc354c);
+                    } */
+                    @media screen and (max-width: 600px) {
+                        button {
+                          font-size: 2.2vh;
+                        }
+                    }
+                    
+                    
+                }
+            }
+            h1{
+                position: relative;
+                font-family: Source Code Pro, sans-serif;
+                font-size: 3vw;
+                font-weight: normal;
+                padding-left: 5vw;
+                overflow: hidden;
+
+                .box{
+                    position: absolute;
+                    bottom: 0;
+                    display: inline-block;
+                    background: grey;
+                    height: 1vw;
+                    
+                    //z-index: -1;
+
+                }
+                .hi{
+                    display:inline-block;
+                }
+                .comment{
+                    display:inline-block;
+                    color:dimgray;
+                }
+                .text{
+                    font-weight: bold;
+                }
+                .terminal,.cursor{
+                    color:#39ff14;
+                }
+            }
+            /* @media screen and (max-width: 600px) {
+                h1{
+                  font-size: 16px;
+                }
+            } */
+            
+        }
+    }
+}
+
+//navbar
+.navbar{
+    position:absolute;
+    width:100vw;
+    z-index: 9999;
+    opacity:0;
+    
+}
+.navbar-items{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    overflow:hidden; 
+    //display: flex;
+    //float:right;
+    display:inline;
+}
+.item{
+    float: right;
+    padding: 1%;
+    //font-size: 5vh;
+    //display:inline-block;
+}
+
+.fab, .fas{
+    display: block;
+
+}
+
+
+button{
+    text-decoration: none;
+    background-color: transparent;
+    border:none;
+    color: white;
+    overflow:hidden;
+    //padding: 5px 10px;
+}
+.fa-linkedin{
+    color:#2867B2;
+    font-size: 5vh;
+}
+.fa-facebook{
+    color:#4267B2;
+    font-size: 5vh;
+}
+.fa-instagram{
+    color: #E1306C;
+    font-size: 5vh;
+}
+.fa-rocket{
+    font-size: 5vh;
+}
+//navbar ends

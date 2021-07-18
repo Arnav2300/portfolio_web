@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?&family=Zen+Tokyo+Zoo&family=Sawarabi+Mincho&family=Lato&family=Source+Code+Pro&family=VT323&display=swap");
+@font-face {
+  font-family: Dirga;
+  src: url(../fonts/Dirga.ttf);
+}
+
+@font-face {
+  font-family: MK3ul;
+  src: url(../fonts/Apex-Mk3-ExtraLight.otf);
+}
+
+@font-face {
+  font-family: MK3m;
+  src: url(../fonts/Apex-Mk3-Medium.otf);
+}
+
+@font-face {
+  font-family: Beon;
+  src: url(../fonts/Beon.otf);
+}
+
+@font-face {
+  font-family: Marquee-moon;
+  src: url(../fonts/marquee-moon.ttf);
+}
+
+@font-face {
+  font-family: NeonTubes2;
+  src: url(../fonts/NeonTubes2.otf);
+}
+
+@font-face {
+  font-family: Night70sb;
+  src: url(../fonts/Night-Club-70s-Bold.ttf);
+}
+
+@font-face {
+  font-family: Night70sr;
+  src: url(../fonts/Night-Club-70s-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: black;
+  color: aliceblue;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+body .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  /* @media screen and (max-width: 600px) {
+                h1{
+                  font-size: 16px;
+                }
+            } */
+}
+
+body .container section:nth-of-type(1) {
+  background-color: black;
+}
+
+body .container section:nth-of-type(2) {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  position: relative;
+  background-color: black;
+  color: blue;
+  overflow: hidden;
+  /* .eng{
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 3vh;
+                    position: absolute;
+                    top:20vh;
+                    right: 0vh;
+                    color:aliceblue;
+                    padding-right:15vw;
+                } */
+}
+
+body .container section:nth-of-type(2) .jap {
+  position: absolute;
+  font-family: Sawarabi Mincho;
+  font-size: 4vh;
+  top: 24vh;
+  color: aliceblue;
+  padding-left: 15vw;
+}
+
+body .container section:nth-of-type(2) svg {
+  position: absolute;
+  opacity: 1;
+}
+
+body .container section:nth-of-type(3) {
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container section:nth-of-type(3) p {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  color: aliceblue;
+  font-family: lato,sans-serif;
+}
+
+body .container section:nth-of-type(3) .greeting {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  font-family: Marquee-moon,MK3m,lato,sans-serif;
+  font-size: 28vw;
+  color: #fff;
+  opacity: 0;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fc354c, 0 0 82px #fc354c, 0 0 92px #fc354c, 0 0 102px #fc354c, 0 0 151px #fc354c;
+}
+
+body .container section:nth-of-type(3) .intro {
+  font-size: 10vw;
+  position: absolute;
+}
+
+body .container section:nth-of-type(3) .proff {
+  position: absolute;
+  font-size: 4vw;
+  top: 60vh;
+  color: rgba(240, 248, 255, 0.596);
+}
+
+body .container section:nth-of-type(3) .buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  top: 85vh;
+  /* button{
+                        border-top: 2px solid linear-gradient(90deg, transparent,#fc354c);
+                    } */
+}
+
+body .container section:nth-of-type(3) .buttons button {
+  font-family: MK3ul;
+  font-size: 25px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  padding: 1% 2% 1% 2%;
+  border-radius: 30px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .container section:nth-of-type(3) .buttons button a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+body .container section:nth-of-type(3) .buttons button:hover {
+  background: #fc354c;
+  -webkit-box-shadow: 0 0 5px #fc354c, 0 0 20px #fc354c, 0 0 40px #fc354c;
+          box-shadow: 0 0 5px #fc354c, 0 0 20px #fc354c, 0 0 40px #fc354c;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+  body .container section:nth-of-type(3) .buttons button {
+    font-size: 2.2vh;
+  }
+}
+
+body .container section h1 {
+  position: relative;
+  font-family: Source Code Pro, sans-serif;
+  font-size: 3vw;
+  font-weight: normal;
+  padding-left: 5vw;
+  overflow: hidden;
+}
+
+body .container section h1 .box {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  background: grey;
+  height: 1vw;
+}
+
+body .container section h1 .hi {
+  display: inline-block;
+}
+
+body .container section h1 .comment {
+  display: inline-block;
+  color: dimgray;
+}
+
+body .container section h1 .text {
+  font-weight: bold;
+}
+
+body .container section h1 .terminal, body .container section h1 .cursor {
+  color: #39ff14;
+}
+
+.navbar {
+  position: absolute;
+  width: 100vw;
+  z-index: 9999;
+  opacity: 0;
+}
+
+.navbar-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: inline;
+}
+
+.item {
+  float: right;
+  padding: 1%;
+}
+
+.fab, .fas {
+  display: block;
+}
+
+button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  overflow: hidden;
+}
+
+.fa-linkedin {
+  color: #2867B2;
+  font-size: 5vh;
+}
+
+.fa-facebook {
+  color: #4267B2;
+  font-size: 5vh;
+}
+
+.fa-instagram {
+  color: #E1306C;
+  font-size: 5vh;
+}
+
+.fa-rocket {
+  font-size: 5vh;
+}
+/*# sourceMappingURL=styles.css.map */
